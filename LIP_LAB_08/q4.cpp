@@ -50,35 +50,10 @@ int func_maior (int v[], int n){
 void cont (int e[], int m, int s[], int n){
 
     for (int i = 0; i < m ; i++){
-        if (e[i] == 0) {
-            s[0] += 1;
-        }
-        else if (e[i] == 1) {
-            s[1] += 1;
-        }
-        else if (e[i] == 2) {
-            s[2] += 1;
-        }
-        else if (e[i] == 3) {
-            s[3] += 1;
-        }
-        else if (e[i] == 4) {
-            s[4] += 1;
-        }
-        else if (e[i] == 5) {
-            s[5] += 1;
-        }
-        else if (e[i] == 6) {
-            s[6] += 1;
-        }
-        else if (e[i] == 7) {
-            s[7] += 1;
-        }
-        else if (e[i] == 8) {
-            s[8] += 1;
-        }
-        else if (e[i] == 9 ) {
-            s[9] += 1;
+       for (int j = 0; j < m; j++){
+            if(e[j]==i){
+                s[i]+=1;
+            }
         }
     }
     imprimir_vetor(s , n);
